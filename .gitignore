@@ -51,6 +51,8 @@
 
 # Delphi history and backups
 __history/
+Android/
+Win32/
 *.~*
 
 # Castalia statistics file
