@@ -1,0 +1,68 @@
+object FireDAC_SQLiteForm: TFireDAC_SQLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'SQLiteWithFireDAC'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnAdd: TButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 331.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbuttonbordered'
+      TabOrder = 0
+      Text = 'btnAdd'
+      OnClick = btnAddClick
+    end
+    object Title: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'SQLite && FireDAC'
+    end
+    object btnDelete: TButton
+      Align = Left
+      StyledSettings = [Family, Size, Style, FontColor, Other]
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 2
+      Text = 'Delete'
+      OnClick = btnDeleteClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 519.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 384.000000000000000000
+    Viewport.Height = 519.000000000000000000
+  end
+end
